@@ -10,3 +10,5 @@ class Point:
 
 pt = Point(1)
 print(pt.x)
+
+#я с макбука
