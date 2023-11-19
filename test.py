@@ -10,7 +10,6 @@ class Point:
         self.x = x
 
 pt = Point(1)
-
 pt.coord = 2
 print(pt.coord)
 
