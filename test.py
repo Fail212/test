@@ -1,12 +1,16 @@
-print('Hello, world!')
-print('Test')
-
-for i in range(10):
-    print(i)
-
 class Point:
     def __init__(self, x):
         self.x = x
+    @property
+    def coord(self):
+        return self.x
+
+    @coord.setter
+    def coord(self, x):
+        self.x = x
 
 pt = Point(1)
-print(pt.x)
+
+pt.coord = 2
+print(pt.coord)
+
