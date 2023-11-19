@@ -13,3 +13,4 @@ pt = Point(1)
 pt.coord = 2
 print(pt.coord)
 
+# test 2 commit
