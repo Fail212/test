@@ -1,16 +1,4 @@
-class Point:
-    def __init__(self, x):
-        self.x = x
-    @property
-    def coord(self):
-        return self.x
+import sqlite3 as sq
 
-    @coord.setter
-    def coord(self, x):
-        self.x = x
-
-pt = Point(1)
-pt.coord = 2
-print(pt.coord)
-
-# test 2 commit
+con = sq.connect('saper.db')
+con.close()
